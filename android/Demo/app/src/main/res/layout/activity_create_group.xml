@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:id="@+id/cordinate"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity"
+
+    android:orientation="vertical">
+
+
+
+    <include android:id="@+id/app_bar"
+        layout="@layout/app_bar"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="60dp">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:id="@+id/ll1"
+            android:layout_margin="20dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/eGName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Group Name"
+
+                    android:textColorHint="@color/primaryColorDark"/>
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+       <!-- <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll1"
+                android:weightSum="100"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_weight="70"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="vertical"
+                    android:weightSum="100">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Groups Present"
+                        android:gravity="center"
+                        android:id="@+id/textView3"
+                        android:textColor="#000000"
+                        android:layout_weight="80"/>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/groupList"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:layout_weight="20">
+                    </android.support.v7.widget.RecyclerView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="10"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="0dp"
+                    android:weightSum="100">
+                    <LinearLayout
+                        android:layout_weight="5"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="0dp"
+                        >
+
+                        <TextView
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Select Group Type"
+                            android:id="@+id/textView4"
+                            android:textColor="#000000"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="55"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="0dp"
+                        android:weightSum="100">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/groupType"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="50">
+                        </android.support.v7.widget.RecyclerView>
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/empType"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="50">
+                        </android.support.v7.widget.RecyclerView>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+    <!--    </ScrollView>-->
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_add"
+        app:backgroundTint="@color/accentColor"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp" />
+
+
+</android.support.design.widget.CoordinatorLayout>

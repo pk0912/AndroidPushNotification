@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.vicky.employeehome.ScrollingActivity"
+    tools:showIn="@layout/activity_employee_detail"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+    <view
+
+
+        android:layout_height="match_parent"
+    android:layout_width="match_parent"
+android:layout_marginTop="30dp"
+        class="android.support.v7.widget.RecyclerView"
+        android:id="@+id/recycler_view1"
+ />
+
+
+</LinearLayout>
+</LinearLayout>
+
+
+

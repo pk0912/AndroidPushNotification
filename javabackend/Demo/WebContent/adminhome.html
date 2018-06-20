@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Admin Panel</title>
+    
+    <link rel="stylesheet" type="text/css"
+          href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/gcmstyle.css">
+    <link href='https://fonts.googleapis.com/css?family=Spinnaker' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+<!--<h1>WELCOME TO ADMIN PANEL</h1>-->
+<!--<form action="adminlogin.jsp" method="post">-->
+<!--<input type="text" name="emp_id" placeholder="employee id" required="true" /></br>-->
+<!--<input type="password" name="pass" placeholder="password" required="true" /></br>-->
+<!--<button type="submit">LOGIN</button>-->
+<!--</form>-->
+
+<section>
+    <div class="img-wrapper">
+        <img src="bootstrap/gcm_logo.png" class="img-logo">
+    </div>
+    <div class="heading-wrapper">
+        <h1 class="title-text">Push Notification Web Service</h1>
+        <div class="sign-in-wrapper">
+            <span class="sign-in-to-continue">Sign in to continue</span>
+        </div>
+
+    </div>
+    <div class="form-wrapper container col-lg-3 col-md-3">
+        <form action="adminlogin.jsp" method="post" class="form-input-wrapper">
+            <fieldset class="form-group">
+                <!--<label for="formGroupExampleInput">Example label</label>-->
+                <input type="text" name="emp_id" class="form-control" id="formGroupExampleInput"
+                       placeholder="Employee Id" required>
+            </fieldset>
+            <fieldset class="form-group">
+                <!--<label for="formGroupExampleInput2">Another label</label>-->
+                <input type="password" name="pass" class="form-control" id="formGroupExampleInput2"
+                       placeholder="Password" required>
+            </fieldset>
+            <button type="submit" class="btn btn-primary col-md-3 login-button">Login</button>
+
+        </form>
+        <span class="forgot-password"><a href="#">forgot password ?</a></span>
+    </div>
+</section>
+
+<!--<section>-->
+    <!--<div class="footer-links">-->
+        <!--hi-->
+    <!--</div>-->
+<!--</section>-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

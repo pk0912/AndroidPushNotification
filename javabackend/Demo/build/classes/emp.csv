@@ -1,0 +1,4 @@
+emp_id,dept_id,emp_name,phone,email,pass,usertype
+201,1,Yogender,9876543210,yogi@gmail.com,123,employee
+202,2,Pawan,9786543210,pawan@gmail.com,123,employee
+203,3,Vishnu,9678543210,vishnu@gmail.com,123,employee

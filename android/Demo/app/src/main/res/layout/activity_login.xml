@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.keystone.demo.LoginActivity"
+    android:background="@drawable/newbg"
+    >
+<!--
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar">
+    </include>
+-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="100">
+        <LinearLayout
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"></LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="90"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100"
+        >
+
+        <LinearLayout
+            android:layout_weight="40"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+           <!-- <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/imgView"
+                android:background="@drawable/loginicon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />-->
+        </LinearLayout>
+    <LinearLayout
+        android:layout_weight="40"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:weightSum="40">
+
+       <!-- <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_name"
+            android:layout_weight="11"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+    <EditText
+        android:id="@+id/emp_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Employee_ID"
+
+        android:textColorHint="@color/primaryColorDark"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_name2"
+            android:layout_weight="11"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textColorHint="@color/primaryColor">
+    <EditText
+        android:id="@+id/pwd"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Password"
+
+        android:textColorHint="@color/primaryColor"/>
+        </android.support.design.widget.TextInputLayout>--><EditText
+        android:id="@+id/emp_id"
+        android:layout_weight="11"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:hint="Employee_ID"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
+        />
+        <EditText
+            android:id="@+id/pwd"
+            android:inputType="textPassword"
+            android:layout_weight="11"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:hint="Password"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:orientation="vertical"
+            android:weightSum="20">
+    <Button
+        android:id="@+id/login"
+        android:layout_weight="11"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/round_button"
+        android:layout_margin="10dp"
+        android:text="Login"
+        android:textColor="#ffffff"
+        />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
