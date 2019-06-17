@@ -20,8 +20,8 @@ public class DBInfo
      Connection con=null;
 	 try
 	 {
-	 //con=DriverManager.getConnection("jdbc:mysql://118.67.248.202/mydatabase","shiveshsky","8877303051");
-		 con=DriverManager.getConnection("jdbc:mysql://118.67.248.202/mydatabase","shiveshsky","8877303051");
+	 //con=DriverManager.getConnection("jdbc:mysql://1ipaddress/mydatabase","user******","*********");
+		 con=DriverManager.getConnection("jdbc:mysql://ipaddress/mydatabase","user******","*********");
 	 }
 	 catch(Exception e)
 	 {
